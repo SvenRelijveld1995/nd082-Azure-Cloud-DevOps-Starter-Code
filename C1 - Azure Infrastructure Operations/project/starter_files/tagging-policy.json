@@ -1,0 +1,19 @@
+{
+    "displayName": "Require at least one tag on resources",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Enforces existence of a single tag. ",
+    "metadata": {
+        "version": "1.0.1",
+        "category": "Tags"
+    },
+    "policyRule": {
+        "if": {
+            "field": "tags",
+            "exists": "false"
+                },
+        "then": {
+            "effect": "deny"
+        }
+    }
+}
