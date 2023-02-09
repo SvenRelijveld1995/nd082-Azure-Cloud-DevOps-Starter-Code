@@ -10,7 +10,7 @@
     "policyRule": {
         "if": {
             "field": "tags",
-            "exists": "false"
+            "equals": ""
                 },
         "then": {
             "effect": "deny"
